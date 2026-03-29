@@ -71,15 +71,11 @@ console.log(estaciones);
 // 10. Crea un Array, transfórmalo a un Set y almacénalo en un Map
 
 const estudiantes = ["Juan", "Jack", "Lester", "Jack"];
-
 console.log(estudiantes);
 
 const nombres = new Set(estudiantes);
-
 console.log(nombres);
 
 const clase = new Map();
-
 clase.set("name", nombres);
-
 console.log(clase);

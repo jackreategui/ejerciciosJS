@@ -10,7 +10,7 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=14229
 let person = {
     name: "Brais",
     age: 37,
-    alias: "MoureDev"
+    alias: "MoureDev",
 }
 
 // Acceso a propiedades
@@ -52,7 +52,7 @@ let person2 = {
     alias: "MoureDev",
     walk: function () {
         console.log("La persona camina.")
-    }
+    },
 }
 person2.walk()
 
@@ -69,9 +69,11 @@ let person3 = {
         name: "Programador",
         exp: 15,
         work: function () {
-            console.log(`La persona de ${this.age} años de experiencia trabaja.`)
-        }
-    }
+            console.log(
+                `La persona de ${this.age} años de experiencia trabaja.`,
+            )
+        },
+    },
 }
 
 console.log(person3)
@@ -87,7 +89,7 @@ let person4 = {
     name: "Brais Moure",
     alias: "MoureDev",
     email: "braismoure@mouredev.com",
-    age: 37
+    age: 37,
 }
 
 console.log(person)
@@ -106,7 +108,8 @@ for (let key in person4) {
 
 // Funciones como objetos
 
-function Person(name, age) { // Debería ser una clase
+function Person(name, age) {
+    // Debería ser una clase
     this.name = name
     this.age = age
 }
